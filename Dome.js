@@ -1,7 +1,8 @@
-let box = document.querySelectorAll(".Box");
-box[0].innerText = "new value 0";
-box[1].innerText = "new value 1";
-box[2].innerText = "new value 2";
-console.log(box[0]);
-console.log(box[1]);
-console.log(box[2]);
+let newBtn = document.createElement("button");
+newBtn.innerText = "click me";
+newBtn.style.color = 'white';
+newBtn.style.backgroundColor = 'red';
+document.querySelector("body").prepend(newBtn);
+
+let para = document.querySelector("p");
+para.classList.add("newClass");
